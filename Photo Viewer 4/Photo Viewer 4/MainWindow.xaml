@@ -1,0 +1,54 @@
+﻿<Window x:Class="Photo_Viewer_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="754" Width="966" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ResizeMode="CanMinimize">
+    <Grid>
+        <TabControl Height="764" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="959">
+            <TabItem Header="Browser" Name="browserTab">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="474*" />
+                        <ColumnDefinition Width="475*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Load" Height="23" HorizontalAlignment="Left" Margin="15,616,0,0" Name="loadButton" VerticalAlignment="Top" Width="75" Click="loadButton_Click" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="73,627,0,0" Name="progressText" Text="" VerticalAlignment="Top" Width="108" Grid.Column="1" />
+                    <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" Name="listBox1" MouseDoubleClick="listBox1_MouseDoubleClick" Panel.ZIndex="-1" Grid.ColumnSpan="2" Margin="0,0,0,140">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="150">
+                                    <Image Source="{Binding Image}" Stretch="Uniform" Width="125" Height="125" HorizontalAlignment="Stretch"/>
+                                    <TextBlock Text="{Binding SourceName}" Width="125" Height="40" TextTrimming="CharacterEllipsis" VerticalAlignment="Stretch" TextWrapping="Wrap" TextAlignment="Center" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel IsItemsHost="True" Orientation="Horizontal" ItemWidth="150" HorizontalAlignment="Stretch" />
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                    </ListBox>
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="73,603,0,0" Name="fileLoadedText" Text="" VerticalAlignment="Top" Grid.Column="1" Width="392" TextTrimming="CharacterEllipsis" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="139,600,0,0" Name="textBlock1" Text="Filter Options:" VerticalAlignment="Top" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="139,636,0,0" Name="textBlock3" Text="File Extensions:" VerticalAlignment="Top" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="224,636,0,0" Name="extensionText" VerticalAlignment="Top" Width="120" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="139,668,0,0" Name="textBlock4" Text="Date Range:" VerticalAlignment="Top" />
+                    <DatePicker Height="25" HorizontalAlignment="Left" Margin="209,666,0,0" Name="startDatePicker" VerticalAlignment="Top" Width="115" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="330,668,0,0" Name="to" Text="to" VerticalAlignment="Top" />
+                    <DatePicker Height="25" HorizontalAlignment="Left" Margin="347,666,0,0" Name="endDatePicker" VerticalAlignment="Top" Width="115" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="359,636,0,0" Name="nameText" Text="Name:" VerticalAlignment="Top" />
+                    <TextBox Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Right" Margin="0,636,430,0" Name="nameTextBox" VerticalAlignment="Top" Width="120" />
+                    <Button Content="Reset Date" Height="23" HorizontalAlignment="Left" Margin="6,666,0,0" Name="clearDateButton" VerticalAlignment="Top" Width="75" Click="clearDateButton_Click" Grid.Column="1" />
+                    <Button Content="Today" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="117,666,0,0" Name="todayButton" VerticalAlignment="Top" Width="75" Click="todayButton_Click" />
+                    <Button Content="Last Week" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="200,666,0,0" Name="weekButton" VerticalAlignment="Top" Width="75" Click="weekButton_Click" />
+                    <Button Content="Last Month" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="284,666,0,0" Name="monthButton" VerticalAlignment="Top" Width="75" Click="monthButton_Click" />
+                    <Button Content="Filter" Height="23" HorizontalAlignment="Left" Margin="249,600,0,0" Name="searchButton" VerticalAlignment="Top" Width="75" Click="searchButton_Click" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="15,645,0,0" Name="textBlock2" Text="Number of Photos:" VerticalAlignment="Top" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="14,664,0,0" Name="numberPhotosBox" VerticalAlignment="Top" Width="65" Text="1000" />
+                </Grid> 
+            </TabItem>
+            <TabItem Header="Inspector" Name="inspectorTab">
+                <Image Height="519" Name="inspectedImage" Stretch="Uniform" Width="679" StretchDirection="Both" Source="/Photo%20Viewer%204;component/Images/NoImageSelected.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

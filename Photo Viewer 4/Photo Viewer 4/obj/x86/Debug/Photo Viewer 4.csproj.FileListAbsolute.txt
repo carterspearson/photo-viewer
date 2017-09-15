@@ -1,0 +1,13 @@
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\bin\Debug\Photo Viewer 4.exe
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\bin\Debug\Photo Viewer 4.pdb
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\MainWindow.baml
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\MainWindow.g.cs
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\App.g.cs
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\Photo Viewer 4_MarkupCompile.cache
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\Photo Viewer 4.g.resources
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\Photo_Viewer_4.Properties.Resources.resources
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\Photo Viewer 4.csproj.GenerateResource.Cache
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\Photo Viewer 4.exe
+c:\users\tester\documents\visual studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\Photo Viewer 4.pdb
+C:\Users\tester\Documents\Visual Studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\LoadPopup.baml
+C:\Users\tester\Documents\Visual Studio 2010\Projects\Photo Viewer 4\Photo Viewer 4\obj\x86\Debug\LoadPopup.g.cs
